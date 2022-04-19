@@ -1,4 +1,4 @@
-package com.example.leetcode
+package com.example.helloword
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
