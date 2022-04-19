@@ -7,5 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
  * function:
  * other:
  */
-public class AopActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
+    var a=1;
+
 }

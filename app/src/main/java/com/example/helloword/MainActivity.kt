@@ -5,14 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import com.example.helloword.aop.AopActivity
+import com.example.helloword.aop.AopMainActivity
 import com.example.helloword.utils.AppManager
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        AppManager.startActivity(this, AopActivity::class.java)
+        AppManager.startActivity(this, AopMainActivity::class.java)
         var intent = Intent(this@MainActivity, TestService::class.java)
         findViewById<View>(R.id.tv).setOnClickListener {
             startService(intent)

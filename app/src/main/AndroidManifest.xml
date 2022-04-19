@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".aop.AopActivity" />
+        <activity android:name=".aop.AopMainActivity" />
+        <activity android:name=".aop.LoginActivity" />
 
         <service android:name="com.example.helloword.TestService" />
     </application>
