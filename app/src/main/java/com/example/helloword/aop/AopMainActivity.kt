@@ -6,6 +6,8 @@ import com.example.helloword.R
 import com.example.helloword.aop.annotation.ClickBehavior
 import com.example.helloword.base.BaseActivity
 import com.example.helloword.databinding.ActivityAopMainBinding
+import com.example.helloword.utils.AppManager
+
 /**
  * Created by K on 2022/4/19
  * function:
@@ -17,6 +19,7 @@ class AopMainActivity : BaseActivity<ActivityAopMainBinding>() {
     }
 
     override fun initView() {
+        AppManager.startActivity(this, LoginActivity::class.java)
         setViewClick(vBinding.tvTitle)
     }
 
@@ -27,7 +30,7 @@ class AopMainActivity : BaseActivity<ActivityAopMainBinding>() {
     override fun onClick(v: View?) {
         when (v?.id) {
             R.id.tv_title -> {
-                Log.e("123","单机2");
+                Log.e("AopMainActivity","单击")
             }
         }
     }

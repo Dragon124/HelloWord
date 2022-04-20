@@ -1,6 +1,8 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'android-aspectjx'
+
 android {
     compileSdkVersion 31
     buildToolsVersion "30.0.3"
@@ -20,6 +22,10 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+        debug {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
     }
     viewBinding {
         enabled = true
@@ -27,6 +33,9 @@ android {
     compileOptions {
         sourceCompatibility 1.8
         targetCompatibility 1.8
+    }
+    aspectjx{
+        exclude 'androidx','com.google','kotlin'//,'com.squareup','com.alipay','org.apache'
     }
 }
 
@@ -39,5 +48,5 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
-    implementation 'org.aspectj:aspectjrt:1.9.6'
 }
+
