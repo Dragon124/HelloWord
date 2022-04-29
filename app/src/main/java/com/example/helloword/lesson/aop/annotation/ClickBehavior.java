@@ -1,4 +1,4 @@
-package com.example.helloword.aop.annotation;
+package com.example.helloword.lesson.aop.annotation;
 
 
 import java.lang.annotation.ElementType;

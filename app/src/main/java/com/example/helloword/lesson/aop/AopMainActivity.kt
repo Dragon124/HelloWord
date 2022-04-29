@@ -1,9 +1,9 @@
-package com.example.helloword.aop
+package com.example.helloword.lesson.aop
 
 import android.util.Log
 import android.view.View
 import com.example.helloword.R
-import com.example.helloword.aop.annotation.ClickBehavior
+import com.example.helloword.lesson.aop.annotation.ClickBehavior
 import com.example.helloword.base.BaseActivity
 import com.example.helloword.databinding.ActivityAopMainBinding
 import com.example.helloword.utils.AppManager

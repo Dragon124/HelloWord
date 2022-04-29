@@ -85,5 +85,5 @@
     ajc* <methods>;
 }
 -keepclassmembers class ** {
-    @com.example.helloword.aop.annotation.ClickBehavior <methods>;
+    @com.example.helloword.lesson.aop.annotation.ClickBehavior <methods>;
 }

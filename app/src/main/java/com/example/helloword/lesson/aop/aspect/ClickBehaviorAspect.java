@@ -1,7 +1,7 @@
-package com.example.helloword.aop.aspect;
+package com.example.helloword.lesson.aop.aspect;
 
 import android.util.Log;
-import com.example.helloword.aop.annotation.ClickBehavior;
+import com.example.helloword.lesson.aop.annotation.ClickBehavior;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -17,7 +17,7 @@ import org.aspectj.lang.reflect.MethodSignature;
 public class ClickBehaviorAspect {
     //execution已方法执行时作为切入点
     //* *(..)) 处理ClickBehavior这个类所有方法
-    @Pointcut("execution(@com.example.helloword.aop.annotation.ClickBehavior * *(..))")
+    @Pointcut("execution(@com.example.helloword.lesson.aop.annotation.ClickBehavior * *(..))")
     public void methodPointcut() {
 
     }
